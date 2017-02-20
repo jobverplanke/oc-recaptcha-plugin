@@ -1,0 +1,12 @@
+
+{% flash error %}
+<div class="alert alert-{{ type == 'error' ? 'danger' : type }} alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	{{ debug == true ? message : custom_message }}
+</div>
+{% endflash %}
+
+
+{% if recaptcha_site_key %}
+<div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}" data-theme="{{ recaptcha_theme }}" data-size="{{ recaptcha_size }}" id="{{ __SELF__.getProperties.id }}"></div>
+{% endif %}

@@ -1,0 +1,6 @@
+plugin:
+    name: 'jobverplanke.captcha::lang.plugin.name'
+    description: 'jobverplanke.captcha::lang.plugin.description'
+    author: 'Job Verplanke'
+    icon: oc-icon-google
+    homepage: ''
